@@ -1,0 +1,31 @@
+<div class="login-container">
+  <img [src]="logoImage" alt="logoVSAGENCY" class="m-auto"/>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="mt-32">
+    <mat-card-header>
+      <mat-card-title class="text-white">Connexion</mat-card-title>
+    </mat-card-header>
+    <input formControlName="email" placeholder="Email" required type="text" class="bg-dark text-white">
+    <input formControlName="password" placeholder="Mot de passe" type="password" required class="bg-dark text-white">
+    <div class="module-border-wrap mt-5">
+        <button type="submit" class="bg-dark text-white">Connexion</button>
+    </div>
+  </form>
+<div class="w-fit m-auto pt-12 pb-8">
+  <p class="text-white font-xs font-bold">Ou connecte toi avec</p>
+</div>
+<div class="flex justify-around pb-24">
+  <button class="button">
+    <img [src]="logoApple" alt="logoApple" class="m-auto"/>
+  </button>
+  <button class="button">
+    <img [src]="logoFacebook" alt="logoFacebook" class="m-auto"/>
+  </button>
+  <button class="button">
+    <img [src]="logoGoogle" alt="logoGoogle" class="m-auto"/>
+  </button>
+</div>
+  <div class="flex font-xs font-bold gap-3 w-fit m-auto">
+    <p class="text-white">Tu n’as pas de compte ?</p>
+    <a (click)="onSignUp()"  class="text-lg inscris">Inscris toi</a>
+  </div>
+</div>

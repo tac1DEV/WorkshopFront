@@ -1,0 +1,83 @@
+.banner-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  animation: slide 10s linear infinite;
+}
+.firstBanner {
+  animation: slideFirst 10s linear infinite;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slideFirst {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+* {
+  font-family: 'Oswald', sans-serif !important;
+}
+
+/* dashboard.component.css */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 275%;
+  animation: slide 10s infinite;
+}
+
+.carousel-item {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-33.33%);
+  }
+  66% {
+    transform: translateX(-66.66%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.remonte{
+  margin-top: -34rem;
+}
+
+

@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login-container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 3px solid white;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.button{
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid white;
+  font-weight: bold;
+}
+
+.module-border-wrap {
+  position: relative;
+  background: linear-gradient(225deg, #5800FF, #E900FF, #FFC600);
+  padding: 2px;
+
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+}
+
+.password-container button {
+  margin-left: 10px;
+  padding: 10px;
+}

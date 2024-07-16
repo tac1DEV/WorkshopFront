@@ -1,0 +1,37 @@
+<div class="login-container">
+  <img [src]="logoImage" alt="logoVSAGENCY" class="m-auto"/>
+  <form [formGroup]="signUpForm" (ngSubmit)="onSignUp()" class="mt-32">
+    <mat-card-header>
+      <mat-card-title class="text-white">Inscription</mat-card-title>
+    </mat-card-header>
+    <input formControlName="email" placeholder="Email" required type="text" class="bg-dark text-white">
+<!--    <input formControlName="password" placeholder="Mot de passe" type="password" required class="bg-dark text-white">-->
+<!--    <input formControlName="confirmPassword" placeholder="Confirmez le mot de passe" type="password" required class="bg-dark text-white">-->
+    <div>
+      <input type="password" formControlName="password" placeholder="Mot de passe" class="bg-dark text-white">
+      <div>
+        <input type="password" placeholder="Confirmez le mot de passe" id="confirmPassword" #confirmPasswordInput class="bg-dark text-white">
+        <div class="error-message text-red-700" *ngIf="signUpForm.errors?.['PasswordNoMatch']">
+          Les mot de passes ne correspondent pas.
+        </div>
+      </div>
+    <div class="module-border-wrap mt-5">
+      <button type="submit" class="bg-dark text-white">Inscription</button>
+    </div>
+    </div>
+  </form>
+  <div class="w-fit m-auto pt-12 pb-8">
+    <p class="text-white font-xs font-bold">Ou inscris toi avec</p>
+  </div>
+  <div class="flex justify-around pb-24">
+    <button class="button">
+      <img [src]="logoApple" alt="logoApple" class="m-auto"/>
+    </button>
+    <button class="button">
+      <img [src]="logoFacebook" alt="logoFacebook" class="m-auto"/>
+    </button>
+    <button class="button">
+      <img [src]="logoGoogle" alt="logoGoogle" class="m-auto"/>
+    </button>
+  </div>
+</div>
